@@ -29,7 +29,5 @@ jobs:
         run: npm test
 
       - name: Simular despliegue
-        run: |
-          echo "Despliegue simulado la aplicacion paso 
-          Lint y Pruebas correctamente"
+        run: firebase deploy --only hosting
 
