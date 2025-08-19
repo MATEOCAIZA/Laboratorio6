@@ -3,7 +3,7 @@ const{calcWeightedGrade,percentile}=require('./utils');
 describe('calcWeightedGrade', () => {
   test('80*0.4 + 90*0.6 = 86.00', () => {
     const items = [{ score: 80, weight: 0.4 }, { score: 90, weight: 0.6 }];
-    expect(calcWeightedGrade(items)).toBe(85.00);
+    expect(calcWeightedGrade(items)).toBe(86.00);
   });
 
   test('throw error if weights != 1', () => {
